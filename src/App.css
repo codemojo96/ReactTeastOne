@@ -1,0 +1,36 @@
+.App{
+
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+min-height: 100vh;
+
+}
+
+.recipesD{
+display: flex;
+ justify-content: center;
+flex-wrap: wrap;
+
+}
+
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.search-bar{
+
+width: 30rem;
+border:none;
+padding:5px;
+}
+
+
+.serach-button{
+  border:none;
+  padding:5px 10px;
+  background-color: lightcoral;
+  color:white;
+}
