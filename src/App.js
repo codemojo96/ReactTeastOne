@@ -14,7 +14,7 @@ const [query, setQuery]=useState('chicken');
 
 useEffect(()=>{
   getRecipes();
-}, [query] )
+}, [query] );
 
 const getRecipes = async ()=>{
 const response= await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
@@ -35,6 +35,7 @@ setQuery(search);
 };
 return (
    <div className="App">
+     <h1>winner winner, Chiken dinner</h1>
     <form onSubmit={getSearch} className="search-form">
     
         <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
